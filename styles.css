@@ -40,7 +40,7 @@ body {
   height: 10px;
   border-radius: 50%;
   background-color: white;
-  animation: up-down 0.8s ease infinite alternate;
+  animation: up-down 0.8s ease infinite alternate both;;
 }
 .dot:nth-child(2) {
   animation-delay: 0.1s;
@@ -49,14 +49,14 @@ body {
   animation-delay: 0.2s;
 }
 .dot:nth-child(4) {
-  animation-delay: 0.1s;
+  animation-delay: 0.3s;
 }
 @keyframes up-down {
   from {
-    transform: translateY(-10px);
+    transform: translateY(-20px);
   }
   to {
-    transform: translateY(10px);
+    transform: translateY(20px);
   }
 }
 @keyframes orbit {
@@ -90,3 +90,4 @@ body {
     transform: translate(0, 200px);
   }
 }
+
